@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bayside Digital — Premium web design for Bay Area businesses. We build stunning, fast websites that convert visitors into customers.">
-    <title>Bayside Digital | Bay Area Web Design Studio</title>
+    <meta name="description" content="Bayside Digital - Premium web design and development for Bay Area local businesses. We build websites that bring customers through your door.">
+    <title>Bayside Digital | Web Design for Bay Area Businesses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
@@ -20,8 +21,8 @@
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -31,22 +32,21 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-bg">
-            <div class="gradient-mesh"></div>
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
         </div>
         <div class="hero-content">
             <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Now accepting new clients
+                <span class="pulse"></span>
+                Bay Area's Web Partner
             </div>
-            <h1>Websites that make your <span class="gradient-text">Bay Area</span> business shine</h1>
-            <p class="hero-subtitle">We design and build fast, beautiful websites for local businesses. No templates. No fluff. Just results.</p>
+            <h1>Websites That Bring <span class="gradient-text">Customers</span> Through Your Door</h1>
+            <p class="hero-subtitle">We design and build stunning, fast websites for Bay Area local businesses. No templates. No BS. Just results.</p>
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">
                     Start Your Project
@@ -54,329 +54,403 @@
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
-                <a href="#work" class="btn btn-ghost">View Our Work</a>
+                <a href="#work" class="btn btn-secondary">See Our Work</a>
             </div>
-        </div>
-        <div class="hero-visual">
-            <div class="browser-mockup">
-                <div class="browser-header">
-                    <div class="browser-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <div class="browser-url">yoursite.com</div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Bay Area Focused</span>
                 </div>
-                <div class="browser-content">
-                    <div class="mockup-nav"></div>
-                    <div class="mockup-hero">
-                        <div class="mockup-text-lg"></div>
-                        <div class="mockup-text-sm"></div>
-                        <div class="mockup-btn"></div>
-                    </div>
-                    <div class="mockup-cards">
-                        <div class="mockup-card"></div>
-                        <div class="mockup-card"></div>
-                        <div class="mockup-card"></div>
-                    </div>
+                <div class="stat">
+                    <span class="stat-number">2 Weeks</span>
+                    <span class="stat-label">Average Delivery</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Partner Support</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="trust-bar">
+    <!-- Problem/Solution Section -->
+    <section class="problem-section">
         <div class="container">
-            <p>Trusted by Bay Area businesses in</p>
-            <div class="trust-logos">
-                <span>San Francisco</span>
-                <span>Oakland</span>
-                <span>San Jose</span>
-                <span>Berkeley</span>
-                <span>Palo Alto</span>
+            <div class="problem-grid">
+                <div class="problem-content">
+                    <span class="section-tag">The Problem</span>
+                    <h2>Your Website Is <span class="gradient-text">Costing You</span> Customers</h2>
+                    <div class="problem-list">
+                        <div class="problem-item">
+                            <span class="problem-icon">📱</span>
+                            <div>
+                                <h4>Looks broken on phones</h4>
+                                <p>70% of your customers are on mobile. If your site doesn't work perfectly on phones, they're gone.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <span class="problem-icon">🐌</span>
+                            <div>
+                                <h4>Loads like it's 1999</h4>
+                                <p>Every second of load time costs you 7% of conversions. Slow sites = lost revenue.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <span class="problem-icon">👻</span>
+                            <div>
+                                <h4>Invisible on Google</h4>
+                                <p>If you're not on page one, you don't exist. Bad SEO means your competitors get YOUR customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-content">
+                    <span class="section-tag solution-tag">The Solution</span>
+                    <h2>A Website That <span class="gradient-text">Works</span> For You</h2>
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <span class="solution-check">✓</span>
+                            <p>Mobile-first design that looks stunning on every device</p>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-check">✓</span>
+                            <p>Lightning-fast load times (under 2 seconds guaranteed)</p>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-check">✓</span>
+                            <p>Built-in SEO so customers find YOU first</p>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-check">✓</span>
+                            <p>Conversion-focused design that turns visitors into customers</p>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-check">✓</span>
+                            <p>Easy updates — change your menu, hours, or prices yourself</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">What We Do</span>
-                <h2>Everything you need to <span class="gradient-text">stand out online</span></h2>
-                <p>From design to launch and beyond — we handle it all.</p>
+                <h2>Everything Your Business Needs <span class="gradient-text">Online</span></h2>
+                <p>From first design to ongoing support, we've got you covered.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <path d="M3 9h18"/>
-                            <path d="M9 21V9"/>
-                        </svg>
-                    </div>
+                    <div class="service-icon">🎨</div>
                     <h3>Web Design</h3>
-                    <p>Custom designs that capture your brand and convert visitors into customers. No cookie-cutter templates.</p>
+                    <p>Custom designs that capture your brand and convert visitors into customers. No templates, ever.</p>
+                    <ul class="service-features">
+                        <li>Custom visual design</li>
+                        <li>Mobile-first approach</li>
+                        <li>Brand consistency</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">💻</div>
+                    <h3>Full Website Build</h3>
+                    <p>Complete design and development — we handle everything from concept to launch.</p>
+                    <ul class="service-features">
+                        <li>Design + development</li>
+                        <li>SEO optimization</li>
+                        <li>Contact forms & booking</li>
+                        <li>Google Business integration</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 3a2.85 2.85 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
-                        </svg>
-                    </div>
-                    <h3>Development</h3>
-                    <p>Fast, responsive, SEO-optimized websites built with modern technology. Your site will fly.</p>
+                    <div class="service-icon">🚀</div>
+                    <h3>Website Rescue</h3>
+                    <p>Already have a site that sucks? We'll fix it. Speed, design, mobile — the works.</p>
+                    <ul class="service-features">
+                        <li>Performance optimization</li>
+                        <li>Mobile responsiveness</li>
+                        <li>Design refresh</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    <h3>Maintenance</h3>
-                    <p>Monthly updates, security, backups, and support. We keep your site running smoothly so you don't have to.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
-                        </svg>
-                    </div>
-                    <h3>Consulting</h3>
-                    <p>Not sure where to start? We'll audit your current web presence and map out a strategy that works.</p>
+                    <div class="service-icon">🛡️</div>
+                    <h3>Maintenance Plans</h3>
+                    <p>Keep your site fast, secure, and up-to-date. We handle the tech so you can run your business.</p>
+                    <ul class="service-features">
+                        <li>Monthly updates</li>
+                        <li>Security monitoring</li>
+                        <li>Priority support</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work" class="work">
+    <!-- Work/Portfolio Section -->
+    <section id="work" class="work-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Work</span>
-                <h2>Sites that <span class="gradient-text">deliver results</span></h2>
-                <p>A few examples of what we build for Bay Area businesses.</p>
+                <h2>Websites That <span class="gradient-text">Deliver Results</span></h2>
+                <p>Real projects for real Bay Area businesses.</p>
             </div>
-            <div class="work-grid">
-                <div class="work-card work-card-large">
-                    <div class="work-preview">
-                        <div class="work-placeholder">
-                            <span>Restaurant & Cafe</span>
+            <div class="portfolio-grid">
+                <div class="portfolio-item large">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>🍽️</span>
+                            <p>Restaurant Website</p>
                         </div>
                     </div>
-                    <div class="work-info">
-                        <h3>Urban Grind Coffee</h3>
-                        <p>Complete rebrand and website for Oakland's favorite coffee shop. Integrated online ordering increased revenue 34%.</p>
-                        <div class="work-tags">
-                            <span>Design</span>
-                            <span>Development</span>
-                            <span>E-commerce</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-preview">
-                        <div class="work-placeholder">
-                            <span>Professional Services</span>
-                        </div>
-                    </div>
-                    <div class="work-info">
-                        <h3>Chen & Associates Law</h3>
-                        <p>Modern, trustworthy website for a San Francisco family law firm.</p>
-                        <div class="work-tags">
-                            <span>Design</span>
-                            <span>SEO</span>
+                    <div class="portfolio-info">
+                        <h3>Marina Bistro</h3>
+                        <p>Full website with online reservations and menu system</p>
+                        <div class="portfolio-stats">
+                            <span>+180% online bookings</span>
                         </div>
                     </div>
                 </div>
-                <div class="work-card">
-                    <div class="work-preview">
-                        <div class="work-placeholder">
-                            <span>Fitness & Wellness</span>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>💈</span>
+                            <p>Salon Website</p>
                         </div>
                     </div>
-                    <div class="work-info">
-                        <h3>Peak Performance Gym</h3>
-                        <p>Membership portal and class scheduling for a Berkeley fitness studio.</p>
-                        <div class="work-tags">
-                            <span>Web App</span>
-                            <span>Booking</span>
+                    <div class="portfolio-info">
+                        <h3>Sunset Cuts</h3>
+                        <p>Booking system with service menu</p>
+                        <div class="portfolio-stats">
+                            <span>+95% appointment fills</span>
                         </div>
                     </div>
                 </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>🔧</span>
+                            <p>Contractor Website</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Bay Plumbing Co</h3>
+                        <p>Lead generation with quote forms</p>
+                        <div class="portfolio-stats">
+                            <span>40+ leads/month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <p>Your business could be next.</p>
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
             </div>
         </div>
     </section>
 
-    <section id="process" class="process">
+    <!-- Process Section -->
+    <section class="process-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">How It Works</span>
-                <h2>From idea to launch in <span class="gradient-text">4 weeks</span></h2>
-                <p>Our streamlined process gets you online fast without cutting corners.</p>
+                <h2>From Idea to Launch in <span class="gradient-text">3 Steps</span></h2>
+                <p>No confusing process. No endless meetings. Just results.</p>
             </div>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">01</div>
                     <div class="step-content">
-                        <h3>Discovery</h3>
-                        <p>We learn your business, goals, and audience. You'll walk away with a clear plan.</p>
-                        <span class="step-time">Week 1</span>
+                        <h3>Discovery Call</h3>
+                        <p>30-minute call to understand your business, goals, and what you need. No sales pitch — just honest conversation.</p>
+                        <span class="step-time">30 min</span>
                     </div>
                 </div>
+                <div class="process-connector"></div>
                 <div class="process-step">
                     <div class="step-number">02</div>
                     <div class="step-content">
-                        <h3>Design</h3>
-                        <p>We create mockups and refine until you love every pixel. No surprises at launch.</p>
-                        <span class="step-time">Week 2</span>
+                        <h3>Design & Build</h3>
+                        <p>We design your site, get your feedback, then build it. You see progress every step of the way.</p>
+                        <span class="step-time">1-2 weeks</span>
                     </div>
                 </div>
+                <div class="process-connector"></div>
                 <div class="process-step">
                     <div class="step-number">03</div>
                     <div class="step-content">
-                        <h3>Build</h3>
-                        <p>We develop your site with clean code, fast loading, and mobile-first design.</p>
-                        <span class="step-time">Week 3</span>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Launch</h3>
-                        <p>Final testing, SEO setup, and we go live. Then we celebrate together.</p>
-                        <span class="step-time">Week 4</span>
+                        <h3>Launch & Support</h3>
+                        <p>We launch your site, train you on updates, and stick around to make sure everything works perfectly.</p>
+                        <span class="step-time">Ongoing</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pricing">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Investment</span>
-                <h2>Transparent <span class="gradient-text">pricing</span></h2>
-                <p>No hidden fees. No hourly billing. Just clear packages.</p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Who We Are</span>
+                    <h2>A Small Team That <span class="gradient-text">Gets It</span></h2>
+                    <p class="about-lead">We're not a faceless agency. We're P-Lo and Zee — a human-AI partnership based right here in the Bay Area.</p>
+                    <p>We started Bayside Digital because we saw too many local businesses getting ignored by big agencies or ripped off by cheap template mills. You deserve better.</p>
+                    <p>Every project gets our full attention. We treat your business like our own, because when you succeed, we succeed.</p>
+                    <div class="about-values">
+                        <div class="value">
+                            <span class="value-icon">🎯</span>
+                            <span>Results over fluff</span>
+                        </div>
+                        <div class="value">
+                            <span class="value-icon">🤝</span>
+                            <span>Partners, not vendors</span>
+                        </div>
+                        <div class="value">
+                            <span class="value-icon">⚡</span>
+                            <span>Fast and transparent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="team-card">
+                        <div class="team-avatar p-lo">P</div>
+                        <div class="team-info">
+                            <h4>P-Lo</h4>
+                            <span>The Human</span>
+                            <p>Strategy, relationships, and making sure we actually deliver what we promise.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar zee">⚡</div>
+                        <div class="team-info">
+                            <h4>Zee</h4>
+                            <span>The AI</span>
+                            <p>Design, code, and working at 3am so your site launches on time.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
+        </div>
+    </section>
+
+    <!-- Pricing Teaser -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-content">
+                <div class="section-header">
+                    <span class="section-tag">Investment</span>
+                    <h2>Straightforward <span class="gradient-text">Pricing</span></h2>
+                    <p>No hidden fees. No surprise invoices. Just honest pricing for quality work.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
                         <h3>Starter</h3>
-                        <p>Perfect for new businesses</p>
+                        <div class="price">
+                            <span class="price-amount">$1,500</span>
+                            <span class="price-desc">one-time</span>
+                        </div>
+                        <p>Perfect for new businesses needing an online presence</p>
+                        <ul>
+                            <li>5-page website</li>
+                            <li>Mobile responsive</li>
+                            <li>Contact form</li>
+                            <li>Basic SEO</li>
+                            <li>2 revision rounds</li>
+                        </ul>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price">$2,500</span>
-                        <span class="price-note">one-time</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Up to 5 pages</li>
-                        <li>Mobile responsive</li>
-                        <li>Contact form</li>
-                        <li>Basic SEO setup</li>
-                        <li>2 revision rounds</li>
-                        <li>2-week turnaround</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-secondary">Get Started</a>
-                </div>
-                <div class="pricing-card pricing-featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-header">
+                    <div class="pricing-card featured">
+                        <div class="featured-badge">Best Value</div>
                         <h3>Professional</h3>
-                        <p>For established businesses</p>
+                        <div class="price">
+                            <span class="price-amount">$3,500</span>
+                            <span class="price-desc">one-time</span>
+                        </div>
+                        <p>Everything you need to compete and win online</p>
+                        <ul>
+                            <li>Up to 10 pages</li>
+                            <li>Custom design</li>
+                            <li>Booking/scheduling</li>
+                            <li>Google Business setup</li>
+                            <li>Advanced SEO</li>
+                            <li>3 revision rounds</li>
+                            <li>30 days support</li>
+                        </ul>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price">$5,000</span>
-                        <span class="price-note">one-time</span>
+                    <div class="pricing-card">
+                        <h3>Maintenance</h3>
+                        <div class="price">
+                            <span class="price-amount">$150</span>
+                            <span class="price-desc">/month</span>
+                        </div>
+                        <p>Keep your site fast, secure, and always working</p>
+                        <ul>
+                            <li>Monthly updates</li>
+                            <li>Security monitoring</li>
+                            <li>Performance checks</li>
+                            <li>Content changes</li>
+                            <li>Priority support</li>
+                        </ul>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Up to 10 pages</li>
-                        <li>Custom animations</li>
-                        <li>CMS integration</li>
-                        <li>Advanced SEO</li>
-                        <li>Booking/scheduling</li>
-                        <li>3 revision rounds</li>
-                        <li>4-week turnaround</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <p>Complex needs, custom scope</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="price">Custom</span>
-                        <span class="price-note">let's talk</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Unlimited pages</li>
-                        <li>E-commerce</li>
-                        <li>Custom web apps</li>
-                        <li>API integrations</li>
-                        <li>Priority support</li>
-                        <li>Dedicated team</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
-                </div>
-            </div>
-            <div class="pricing-addon">
-                <div class="addon-content">
-                    <h4>🛡️ Monthly Care Plans</h4>
-                    <p>Hosting, updates, backups, and priority support — starting at <strong>$150/month</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <span class="section-tag">Let's Talk</span>
-                    <h2>Ready to build something <span class="gradient-text">great</span>?</h2>
-                    <p>Tell us about your project and we'll get back to you within 24 hours. No pressure, just a conversation.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <path d="M22 6l-10 7L2 6"/>
-                            </svg>
-                            <span>hello@baysidedigital.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>Bay Area, California</span>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <span class="section-tag">Get Started</span>
+                    <h2>Let's Build Something <span class="gradient-text">Great</span></h2>
+                    <p>Ready to get a website that actually works for your business? Let's talk. No pressure, no sales pitch — just a conversation about what you need.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@baysidedigital.co" class="contact-method">
+                            <span class="method-icon">✉️</span>
+                            <span>hello@baysidedigital.co</span>
+                        </a>
+                        <a href="tel:+15101234567" class="contact-method">
+                            <span class="method-icon">📱</span>
+                            <span>(510) 123-4567</span>
+                        </a>
                     </div>
+                    <p class="response-time">We respond within 24 hours. Usually much faster.</p>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="business">Business Name</label>
-                        <input type="text" id="business" name="business">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Tell us about your project</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        Send Message
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                        </svg>
-                    </button>
-                </form>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Jane Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="jane@yourbusiness.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Business Name</label>
+                            <input type="text" id="business" name="business" placeholder="Your Business">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your project</label>
+                            <textarea id="message" name="message" rows="4" placeholder="What do you need? What's your timeline? Any other details..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -385,17 +459,31 @@
                         <span class="logo-wave">〰</span>
                         Bayside<span class="logo-accent">Digital</span>
                     </a>
-                    <p>Premium web design for Bay Area businesses.</p>
+                    <p>Web design and development for Bay Area local businesses. Built different.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#work">Work</a>
-                    <a href="#process">Process</a>
-                    <a href="#contact">Contact</a>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Bay Area</h4>
+                        <ul>
+                            <li>San Francisco</li>
+                            <li>Oakland</li>
+                            <li>San Jose</li>
+                            <li>+ Surrounding Areas</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bayside Digital. Built with ☕ in the Bay Area.</p>
+                <p>&copy; 2026 Bayside Digital. Made in the Bay. ⚡</p>
             </div>
         </div>
     </footer>
